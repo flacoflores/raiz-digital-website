@@ -526,6 +526,387 @@ section {
     font-style: italic;
 }
 
+/* ===== Three Questions Section ===== */
+.three-questions {
+    text-align: center;
+}
+
+.questions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 2rem;
+}
+
+.question-item {
+    text-align: center;
+}
+
+.question-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--teal);
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.question-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.question-item p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* ===== Tier Sections ===== */
+.tier-section {
+    padding: 60px 20px;
+}
+
+.tier-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    border-left: 5px solid var(--teal);
+}
+
+.tier-card--build {
+    border-left-color: var(--teal);
+}
+
+.tier-card--grow {
+    border-left-color: var(--accent);
+}
+
+.tier-card--thrive {
+    border-left-color: var(--primary);
+}
+
+.tier-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.tier-title h2 {
+    margin-bottom: 0.25rem;
+}
+
+.tier-tagline {
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tier-tagline--build {
+    color: var(--teal);
+}
+
+.tier-tagline--grow {
+    color: var(--accent);
+}
+
+.tier-tagline--thrive {
+    color: var(--primary);
+}
+
+.tier-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+.tier-platform {
+    display: inline-block;
+    background: var(--bg-alt);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+}
+
+.tier-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.tier-includes h4,
+.tier-specifics h4 {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.tier-includes h4:first-child,
+.tier-specifics h4:first-child {
+    margin-top: 0;
+}
+
+.tier-includes li,
+.tier-specifics li {
+    padding: 6px 0;
+    padding-left: 25px;
+    position: relative;
+    color: var(--text-dark);
+}
+
+.tier-includes li::before,
+.tier-specifics li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--teal);
+    font-weight: bold;
+}
+
+.tier-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* ===== Support Levels ===== */
+.support-section {
+    text-align: center;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.support-card {
+    background: var(--white);
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--teal);
+    transition: all 0.3s ease;
+}
+
+.support-card:nth-child(2) {
+    border-top-color: var(--accent);
+}
+
+.support-card:nth-child(3) {
+    border-top-color: var(--primary);
+}
+
+.support-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.support-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+}
+
+.support-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.support-card p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.support-card li {
+    padding: 6px 0;
+    padding-left: 20px;
+    position: relative;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.support-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--teal);
+}
+
+/* ===== Add-On Section ===== */
+.addon-section {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    text-align: center;
+}
+
+.addon-section h2 {
+    color: var(--white);
+}
+
+.addon-section .section-subtitle {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.addon-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.addon-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+.addon-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.addon-grid h4 {
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+}
+
+.addon-grid li {
+    padding: 6px 0;
+    padding-left: 20px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+}
+
+.addon-grid li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--light-blue);
+}
+
+/* ===== Education Pricing Table ===== */
+.education-pricing {
+    margin-top: 2rem;
+}
+
+.education-pricing table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.education-pricing th,
+.education-pricing td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+.education-pricing th {
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.education-pricing tr:nth-child(even) {
+    background-color: var(--bg-light);
+}
+
+.education-pricing td:last-child {
+    font-weight: 600;
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+/* ===== Homepage Tier Overview ===== */
+.tier-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.tier-overview-card {
+    background: var(--white);
+    padding: 30px 25px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--teal);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tier-overview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tier-overview-card:nth-child(2) {
+    border-top-color: var(--accent);
+}
+
+.tier-overview-card:nth-child(3) {
+    border-top-color: var(--primary);
+}
+
+.tier-overview-card .service-number {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.tier-overview-card .price {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.tier-overview-card li {
+    padding: 5px 0;
+    padding-left: 20px;
+    position: relative;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.tier-overview-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--teal);
+}
+
+.extras-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.extras-grid .service-card {
+    border-top: 4px solid var(--light-blue);
+}
+
 /* ===== About Page ===== */
 .about-section,
 .story-section,
@@ -764,6 +1145,26 @@ footer {
     .values-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .tier-overview-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tier-overview-grid .tier-overview-card:nth-child(3) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .support-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .support-grid .support-card:nth-child(3) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -816,7 +1217,29 @@ footer {
     .why-grid,
     .pricing-grid,
     .values-grid,
-    .faq-grid {
+    .faq-grid,
+    .questions-grid,
+    .tier-overview-grid,
+    .support-grid,
+    .extras-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tier-overview-grid .tier-overview-card:nth-child(3),
+    .support-grid .support-card:nth-child(3) {
+        max-width: 100%;
+    }
+
+    .tier-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tier-header {
+        flex-direction: column;
+    }
+
+    .addon-grid {
         grid-template-columns: 1fr;
     }
 
