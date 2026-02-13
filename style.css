@@ -1237,6 +1237,11 @@ footer {
     margin-bottom: 0.5rem;
 }
 
+.footer-spanish {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
 .footer-location {
     font-size: 0.9rem;
 }
