@@ -37,25 +37,16 @@ document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
     });
 });
 
-// Contact form submission
-var contactForm = document.getElementById('contact-form');
+// Contact form — show success message after Formsubmit redirect
 var formSuccess = document.getElementById('form-success');
 
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
+if (formSuccess && window.location.search.indexOf('submitted=true') !== -1) {
+    formSuccess.textContent = 'Thank you! I\'ll be in touch within 1-2 business days.';
+    formSuccess.style.display = 'block';
+    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-        var name = document.getElementById('name').value;
-
-        // In production, this would send to a backend or email service
-        formSuccess.textContent = 'Thank you, ' + name + '! I\'ll be in touch within 1-2 business days.';
-        formSuccess.style.display = 'block';
-
-        contactForm.reset();
-
-        // Scroll to success message
-        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    });
+    // Clean up URL
+    window.history.replaceState({}, '', window.location.pathname);
 }
 
 // Add scroll effect to navigation
