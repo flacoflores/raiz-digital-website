@@ -1194,6 +1194,25 @@ section {
     color: var(--text-light);
 }
 
+/* ===== Nonprofit Discount Banner ===== */
+.nonprofit-banner {
+    background-color: var(--teal);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.nonprofit-banner h3 {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+}
+
+.nonprofit-banner p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
 /* ===== CTA Section ===== */
 .cta-section {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
