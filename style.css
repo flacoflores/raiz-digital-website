@@ -1042,6 +1042,80 @@ section {
     color: var(--teal);
 }
 
+/* Portfolio Case Study Phases */
+.portfolio-phase {
+    background-color: var(--bg-light);
+    border-left: 3px solid var(--teal);
+    padding: 1rem 1.25rem;
+    margin: 0.75rem 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.portfolio-phase .portfolio-tag {
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-phase p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Portfolio Results */
+.portfolio-results {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.portfolio-results li {
+    padding: 0.5rem 0;
+    padding-left: 0;
+    border-bottom: 1px solid var(--bg-alt);
+    font-size: 0.95rem;
+}
+
+.portfolio-results li::before {
+    content: none;
+}
+
+.portfolio-results li strong {
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+/* Portfolio Testimonial Quote */
+.portfolio-quote {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: var(--white);
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    position: relative;
+}
+
+.portfolio-quote::before {
+    content: "\201C";
+    font-size: 3rem;
+    position: absolute;
+    top: -5px;
+    left: 12px;
+    opacity: 0.3;
+    font-style: normal;
+}
+
+.portfolio-quote cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    opacity: 0.85;
+    font-style: normal;
+}
+
 /* ===== About Page ===== */
 .about-section,
 .story-section,
